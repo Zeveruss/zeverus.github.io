@@ -6,7 +6,11 @@ import { Link } from "react-router-dom";
 
 const Navigation2 = () => {
     const Menus = [
+<<<<<<< HEAD
         { name: "Home", icon: faHome, dis: "translate-x-0", route: "zeverus.github.io/" },
+=======
+         { name: "Home", icon: faHome, dis: "translate-x-0", route: "zeverus.github.io/" },
+>>>>>>> 26b58f1da8b87cb3ed086dd77acda9114c3014c4
         { name: "Profile", icon: faGamepad, dis: "translate-x-16", route: "zeverus.github.io/form" },
         { name: "Absen", icon: faCalendarDay, dis: "translate-x-32", route: "zeverus.github.io/absen" },
     ];
