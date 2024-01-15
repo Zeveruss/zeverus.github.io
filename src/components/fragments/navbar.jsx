@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navLinks = [
@@ -13,30 +14,30 @@ const Navbar = () => {
     <>
       <header className="sm:px-8 px-4 py-2 z-10 w-full">
         <nav className="flex justify-between items-center max-container">
-          <a href="/" className="block">
+          <Link to="zeverus.github.io/" className="block">
             <img
-              src="../images/logo.png"  // Ganti dengan path gambar yang sesuai
+              src="https://back-adm.vogaon.com/storage/logo/LOGO-382023121001285374263.png"  // Ganti dengan path gambar yang sesuai
               alt="Logo"
               className="h-12 w-auto"
             />
-          </a>
+          </Link>
 
           <ul className="flex-1 flex ml-6 gap-10 max-lg:hidden">
             {navLinks.map((item) => (
               <li key={item.label}>
-                <a
-                  href={item.href}
+                <Link
+                  to={item.href}
                   className="font-montserrat leading-normal text-lg text-white"
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
           <div className="flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24 text-white">
-            <a href="/form">Sign in</a>
+            <Link to="/form">Sign in</Link>
             <span>/</span>
-            <a href="/">Explore now</a>
+            <Link to="/">Explore now</Link>
           </div>
           <div
             className="hidden max-lg:block cursor-pointer"
@@ -62,12 +63,12 @@ const Navbar = () => {
             <ul className=" lg:hidden flex flex-col items-center justify-center h-full ">
               {navLinks.map((item) => (
                 <li key={item.label}>
-                  <a
-                    href={item.href}
+                  <Link
+                    to={item.href}
                     className="font-montserrat leading-normal text-lg text-slate-gray"
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

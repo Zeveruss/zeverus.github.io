@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-blue-300 text-white p-4 sm:flex sm:justify-between sm:items-center">
       <div className="flex items-center">
-        <img src="../images/logo.png" alt="logo" className="h-10 w-30" />
+        <img src="https://back-adm.vogaon.com/storage/logo/LOGO-382023121001285374263.png" alt="logo" className="h-10 w-30" />
         <p className="ml-3">&copy; 2024 Zeverus. All Right Reserved</p>
       </div>
       <div className="mt-4 sm:mt-0">
