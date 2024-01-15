@@ -10,9 +10,9 @@ const App = () => {
     <div className="flex flex-col h-screen bg-cover bg-center bg-emerald-300">
       <Router>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/form" element={<Formp />}></Route>
-          <Route path="/absen" element={<Absen />}></Route>
+          <Route path="zeverus.github.io/" element={<Home />}></Route>
+          <Route path="zeverus.github.io/form" element={<Formp />}></Route>
+          <Route path="zeverus.github.io/absen" element={<Absen />}></Route>
         </Routes>
       </Router>
     </div>
