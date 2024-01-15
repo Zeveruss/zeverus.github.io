@@ -8,7 +8,7 @@ import React from "react";
 const App = () => {
   return (
     <div className="flex flex-col h-screen bg-cover bg-center bg-emerald-300">
-      <Router>
+      <Router basename="/zeverus.github.io">
         <Routes>
           <Route path="zeverus.github.io/" element={<Home />}></Route>
           <Route path="zeverus.github.io/form" element={<Formp />}></Route>

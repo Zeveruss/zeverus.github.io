@@ -35,9 +35,9 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24 text-white">
-            <Link to="/form">Sign in</Link>
+            <Link to="zeverus.github.io/form">Sign in</Link>
             <span>/</span>
-            <Link to="/">Explore now</Link>
+            <Link to="zeverus.github.io/">Explore now</Link>
           </div>
           <div
             className="hidden max-lg:block cursor-pointer"
